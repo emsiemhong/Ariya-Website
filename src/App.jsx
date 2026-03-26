@@ -3,6 +3,7 @@ import SeamlessWrapper from './components/SeamlessWrapper';
 import ServicesGrid from './components/ServicesGrid';
 import Portfolio from './components/Portfolio';
 import AriyaStory from './components/AriyaStory';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 
@@ -14,6 +15,7 @@ function App() {
         <ServicesGrid />
         <Portfolio />
         <AriyaStory />
+        <Contact />
       </main>
       <Footer />
     </div>

@@ -2,7 +2,7 @@ import React, { Suspense, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Environment } from '@react-three/drei';
 import { ArrowRight } from 'lucide-react';
-import GlassMonolith from './GlassMonolith';
+import ProfessionalTechHub from './ProfessionalTechHub';
 
 /* ── Animated gold line that grows in on mount ── */
 const GoldLine = () => {
@@ -38,7 +38,7 @@ const Hero = () => {
         >
           <Suspense fallback={null}>
             <Environment preset="city" />
-            <GlassMonolith />
+            <ProfessionalTechHub />
           </Suspense>
         </Canvas>
       </div>
@@ -108,7 +108,7 @@ const Hero = () => {
 
           {/* Hover hint */}
           <p className="mt-8 text-[#F5F5F5]/25 text-[11px] tracking-widest uppercase">
-            Hover the cube →
+            Hover the tech hub →
           </p>
         </div>
       </div>
