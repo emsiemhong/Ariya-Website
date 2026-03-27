@@ -107,9 +107,9 @@ const Hero = () => {
           </div>
 
           {/* Hover hint */}
-          <p className="mt-8 text-[#F5F5F5]/25 text-[11px] tracking-widest uppercase">
+          {/* <p className="mt-8 text-[#F5F5F5]/25 text-[11px] tracking-widest uppercase">
             Hover the tech hub →
-          </p>
+          </p> */}
         </div>
       </div>
 
