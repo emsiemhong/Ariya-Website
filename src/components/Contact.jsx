@@ -53,7 +53,7 @@ const Contact = () => {
                 Email Us
               </a>
               <a 
-                href="https://t.me/ariyasolutions"
+                href="https://t.me/+gzynnIuduBw3ZWY1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-[#2AABEE] hover:bg-[#229ED9] text-white px-6 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"

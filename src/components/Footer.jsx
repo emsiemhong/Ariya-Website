@@ -144,7 +144,7 @@ const Footer = () => {
             
             {/* Social Icons */}
             <div className="flex gap-3 mb-6">
-              <Social href="https://t.me/ariyasolutions" label="Telegram">
+              <Social href="https://t.me/+gzynnIuduBw3ZWY1" label="Telegram">
                 <TelegramIcon size={20} />
               </Social>
               <Social href="https://www.linkedin.com/in/ariya-digital-solutions-b988b73b3/?skipRedirect=true" label="LinkedIn">
