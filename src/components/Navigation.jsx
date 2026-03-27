@@ -5,7 +5,7 @@ const NAV_LINKS = [
   { en: 'Solutions',  km: 'ដំណោះស្រាយ', href: '#services'  },
   { en: 'Portfolio',  km: 'ស្នាដៃ',       href: '#portfolio' },
   { en: 'About',      km: 'អំពីយើង',      href: '#story'    },
-  { en: 'Contact',    km: 'ទាក់ទង',       href: '#contact'   },
+  // { en: 'Contact',    km: 'ទាក់ទង',       href: '#contact'   },
 ];
 
 const BurgerIcon = ({ open }) => (
@@ -57,9 +57,11 @@ const Navigation = () => {
 
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 group" onClick={close}>
-            <div className="w-9 h-9 rounded-lg bg-[#D4AF37] flex items-center justify-center shadow-[0_0_16px_rgba(212,175,55,0.35)] flex-shrink-0">
-              <span className="text-[#1F4E79] font-extrabold text-lg leading-none">A</span>
-            </div>
+            <img 
+              src="/logo-removebg-preview.png" 
+              alt="Ariya Logo" 
+              className="w-15 h-15 rounded-lg  flex-shrink-0 object-contain"
+            />
             <span className={`font-extrabold text-xl tracking-widest transition-colors duration-300 ${logoText}`}>
               ARIYA
             </span>
@@ -67,7 +69,7 @@ const Navigation = () => {
 
           {/* Desktop links */}
           <div className="hidden md:flex items-center gap-10">
-            {NAV_LINKS.slice(0, 3).map((l) => (
+            {NAV_LINKS.map((l) => (
               <a
                 key={l.en}
                 href={l.href}

@@ -6,21 +6,21 @@ const services = [
     icon: MonitorSmartphone,
     iconColor: '#1F4E79',
     title: 'Web Presence',
-    titleKm: 'វត្តមានវែប',
+    titleKm: 'វត្តមានលើអ៊ីនធឺណិត',
     description: 'Professional sites designed to elevate your brand awareness and build trust with your customers.',
   },
   {
     icon: GitMerge,
     iconColor: '#D4AF37',
     title: 'Workflow Automation',
-    titleKm: 'ស្វ័យប្រវត្តិកម្ម',
+    titleKm: 'ការងារធ្វើដោយស្វ័យប្រវត្តិ',
     description: 'Streamlining your internal business processes to save time, reduce errors, and increase efficiency.',
   },
   {
     icon: Smartphone,
     iconColor: '#1F4E79',
     title: 'Mobile Innovation',
-    titleKm: 'ម៉ូបាល់',
+    titleKm: 'គំនិតថ្មីៗលើទូរស័ព្ទ',
     description: 'Custom, high-performance mobile applications built with Flutter to engage users on the go.',
   },
 ];
@@ -29,7 +29,6 @@ const ServicesGrid = () => {
   return (
     <section id="services" className="py-28 relative overflow-hidden bg-[#F5F5F5]">
 
-      {/* ── Faint 2% grid ─────────────────────────────────────────────── */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{

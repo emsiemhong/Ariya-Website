@@ -138,30 +138,23 @@ const Footer = () => {
             <FLink href="#services">Cloud Infrastructure</FLink>
           </div>
 
-          {/* Col 4 — Contact */}
+          {/* Col 4 — Social */}
           <div>
-            <ColHead>Get in Touch</ColHead>
-
-            {/* Primary Telegram CTA */}
-            <a
-              href="https://t.me/ariyasolutions"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2.5 w-full px-5 py-4 rounded-xl bg-[#D4AF37] hover:bg-[#c49b28] text-[#2E5C4C] font-extrabold text-sm transition-all shadow-[0_4px_20px_rgba(212,175,55,0.35)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.55)] hover:-translate-y-0.5 transform mb-4"
-            >
-              <TelegramIcon size={18} />
-              Discuss on Telegram
-            </a>
-
-            {/* Email */}
-            <a
-              href="mailto:hello@ariyasolutions.com"
-              className="flex items-center gap-2 text-[#F5F5F5]/55 hover:text-[#D4AF37] transition-colors text-sm mb-5 group"
-            >
-              <Mail size={14} className="text-[#D4AF37]/60 group-hover:text-[#D4AF37] transition-colors flex-shrink-0" />
-              hello@ariyasolutions.com
-            </a>
-
+            <ColHead>Follow Us</ColHead>
+            
+            {/* Social Icons */}
+            <div className="flex gap-3 mb-6">
+              <Social href="https://t.me/ariyasolutions" label="Telegram">
+                <TelegramIcon size={20} />
+              </Social>
+              <Social href="https://www.linkedin.com/in/ariya-digital-solutions-b988b73b3/?skipRedirect=true" label="LinkedIn">
+                <Linkedin size={20} />
+              </Social>
+              <Social href="https://facebook.com/ariyasolutions" label="Facebook">
+                <FacebookIcon size={20} />
+              </Social>
+            </div>
+            
             {/* Trust note */}
             <div className="flex items-start gap-2 p-3 rounded-xl bg-white/6 border border-white/10">
               <Shield size={14} className="text-[#D4AF37] flex-shrink-0 mt-0.5" />
@@ -175,23 +168,10 @@ const Footer = () => {
         </div>
 
         {/* ── Sub-footer ── */}
-        <div className="mt-12 pt-6 border-t border-[#D4AF37]/20 flex flex-col-reverse sm:flex-row items-center justify-between gap-4">
-
-          {/* Social icons */}
-          <div className="flex items-center gap-3">
-            <Social href="https://t.me/ariyasolutions" label="Telegram">
-              <TelegramIcon size={16} />
-            </Social>
-            <Social href="https://linkedin.com/company/ariyasolutions" label="LinkedIn">
-              <Linkedin size={16} />
-            </Social>
-            <Social href="https://facebook.com/ariyasolutions" label="Facebook">
-              <FacebookIcon size={16} />
-            </Social>
-          </div>
+        <div className="mt-12 pt-6 border-t border-[#D4AF37]/20 flex flex-col items-center gap-4">
 
           {/* Copyright */}
-          <p className="text-[#F5F5F5]/35 text-xs text-center sm:text-right">
+          <p className="text-[#F5F5F5]/35 text-xs text-center">
             © {year}{' '}
             <span className="text-[#F5F5F5]/55 font-medium">Ariya Software Solutions.</span>
             {' '}All rights reserved.
