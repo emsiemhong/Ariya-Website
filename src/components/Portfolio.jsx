@@ -201,7 +201,7 @@ const Portfolio = () => {
             <p className="text-gray-600 max-w-2xl mx-auto">Foundational engines built with enterprise architecture, ready to be customized for your specific business needs.</p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {templates.map((template, idx) => (
                <div 
                  key={idx} 

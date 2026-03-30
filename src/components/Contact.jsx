@@ -45,13 +45,13 @@ const Contact = () => {
           <div className="mt-12 relative z-10 text-center">
             <p className="text-gray-600 mb-6">Or reach out through our social channels</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a 
+              {/* <a 
                 href="mailto:ariyateam.dev@gmail.com" 
                 className="flex items-center gap-3 bg-[#1F4E79] hover:bg-[#1a3d61] text-white px-6 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 <MessageCircle size={20} />
                 Email Us
-              </a>
+              </a> */}
               <a 
                 href="https://t.me/+gzynnIuduBw3ZWY1"
                 target="_blank"
