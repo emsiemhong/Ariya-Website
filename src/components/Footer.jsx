@@ -105,9 +105,11 @@ const Footer = () => {
           {/* Col 1 — Identity */}
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 rounded-xl bg-[#D4AF37] flex items-center justify-center shadow-lg flex-shrink-0">
-                <span className="text-[#2E5C4C] font-extrabold text-xl leading-none">A</span>
-              </div>
+              <img 
+                src="/logo-removebg-preview.png" 
+                alt="Ariya Logo" 
+                className="w-10 h-10 rounded-xl flex-shrink-0 object-contain"
+              />
               <span className="text-[#F5F5F5] font-extrabold text-xl tracking-tight">Ariya</span>
             </div>
             <p className="text-[#F5F5F5]/60 text-sm leading-relaxed mb-6">
