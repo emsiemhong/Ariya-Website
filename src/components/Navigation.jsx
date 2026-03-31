@@ -39,8 +39,6 @@ const Navigation = () => {
   const close = () => setMenuOpen(false);
 
   /* ── Derived styles ─────────────────────────────────────────────── */
-  // State 1: at top → transparent, white text
-  // State 2: scrolled > 80px → frosted glass, blue text
   const barBg     = scrolled
     ? 'bg-white/70 backdrop-blur-[20px] border-b border-[#D4AF37]/20 shadow-sm'
     : 'bg-transparent';
@@ -58,13 +56,15 @@ const Navigation = () => {
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 group" onClick={close}>
             <img 
+              src="/logo-big-s.png" 
+              alt="Ariya Logo" 
+              className="hidden lg:block w-35 h-20 rounded-lg flex-shrink-0 object-contain"
+            />
+            <img 
               src="/logo-removebg-preview.png" 
               alt="Ariya Logo" 
-              className="w-15 h-15 rounded-lg  flex-shrink-0 object-contain"
+              className="lg:hidden w-16 h-20 rounded-lg flex-shrink-0 object-contain"
             />
-            <span className={`font-extrabold text-xl tracking-widest transition-colors duration-300 ${logoText}`}>
-              ARIYA
-            </span>
           </a>
 
           {/* Desktop links */}
