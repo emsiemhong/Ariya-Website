@@ -152,9 +152,9 @@ const Footer = () => {
               <Social href="https://www.linkedin.com/in/ariya-digital-solutions-b988b73b3/?skipRedirect=true" label="LinkedIn">
                 <Linkedin size={20} />
               </Social>
-              <Social href="https://facebook.com/ariyasolutions" label="Facebook">
+              {/* <Social href="https://facebook.com/ariyasolutions" label="Facebook">
                 <FacebookIcon size={20} />
-              </Social>
+              </Social> */}
             </div>
             
             {/* Trust note */}
