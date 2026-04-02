@@ -106,11 +106,10 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-5">
               <img 
-                src="/logo-removebg-preview.png" 
+                src="/logo-big-s.png" 
                 alt="Ariya Logo" 
-                className="w-10 h-10 rounded-xl flex-shrink-0 object-contain"
+                className="w-35 h-10 rounded-xl flex-shrink-0 object-contain"
               />
-              <span className="text-[#F5F5F5] font-extrabold text-xl tracking-tight">Ariya</span>
             </div>
             <p className="text-[#F5F5F5]/60 text-sm leading-relaxed mb-6">
               Senior-Led Digital Excellence in Cambodia. We build the tools that
