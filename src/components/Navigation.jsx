@@ -57,12 +57,12 @@ const Navigation = () => {
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 group" onClick={close}>
             <img 
-              src="/logo-big-s.png" 
+              src="/final-logo-A.png" 
               alt="Ariya Logo" 
               className="hidden lg:block w-35 h-20 rounded-lg flex-shrink-0 object-contain"
             />
             <img 
-              src="/logo-removebg-preview.png" 
+              src="/final-logo-screen.png" 
               alt="Ariya Logo" 
               className="lg:hidden w-16 h-20 rounded-lg flex-shrink-0 object-contain"
             />
