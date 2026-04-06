@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
 const NAV_LINKS = [
-  { en: 'Solutions',  km: 'ដំណោះស្រាយ', href: '#services'  },
-  { en: 'Portfolio',  km: 'ស្នាដៃ',       href: '#portfolio' },
-  { en: 'About',      km: 'អំពីយើង',      href: '#story'    },
-  // { en: 'Contact',    km: 'ទាក់ទង',       href: '#contact'   },
+  { en: 'Solutions',  km: 'ដំណោះស្រាយ', href: '/#services'  },
+  { en: 'Website Templates',  km: 'គេហវិដ្ល',       href: '/website-solutions' },
+  { en: 'Portfolio',  km: 'ស្នាដៃ',       href: '/#portfolio' },
+  { en: 'About',      km: 'អំពីយើង',      href: '/#story'    },
+  // { en: 'Contact',    km: 'ទាក់ទង',       href: '/#contact'   },
 ];
 
 const BurgerIcon = ({ open }) => (
