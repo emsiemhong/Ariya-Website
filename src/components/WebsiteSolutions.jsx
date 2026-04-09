@@ -62,7 +62,7 @@ const WebsiteSolutions = () => {
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Basic Package</h3>
                 <div className="text-4xl font-bold text-[#1F4E79] mb-1">
-                  $100 - $150
+                  $150 - $250
                 </div>
                 <p className="text-gray-600">Small business / new school</p>
               </div>
@@ -113,7 +113,7 @@ const WebsiteSolutions = () => {
               <div className="text-center mb-8 mt-4">
                 <h3 className="text-2xl font-bold mb-2">Standard Package</h3>
                 <div className="text-4xl font-bold text-[#D4AF37] mb-1">
-                  $200 - $300
+                  $350 - $550
                 </div>
                 <p className="text-white/80">Growing business</p>
               </div>
@@ -169,7 +169,7 @@ const WebsiteSolutions = () => {
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Premium Package</h3>
                 <div className="text-4xl font-bold text-[#1F4E79] mb-1">
-                  $400 - $600
+                  $700 - $1200
                 </div>
                 <p className="text-gray-600">Advanced business</p>
               </div>
