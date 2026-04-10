@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Check, Star, Phone, MessageCircle, Globe, Users, TrendingUp, Zap, Shield, ArrowRight, Mail } from 'lucide-react';
+import { ArrowRight, Check, Star, Globe, Users, Zap, TrendingUp, MessageCircle, ShoppingCart, CreditCard, Palette, Crown, Phone, Mail, Shield } from 'lucide-react';
 import Navigation from './Navigation';
 import Footer from './Footer';
 import ContactForm from './ContactForm';
 
 const WebsiteSolutions = () => {
+  const [activeDemo, setActiveDemo] = useState('educational');
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <Navigation />
@@ -319,7 +320,7 @@ const WebsiteSolutions = () => {
         </div>
       </section>
 
-      {/* Section 5: Sample Websites (Placeholder) */}
+      {/* Section 5: Sample Websites */}
       <section className="py-20 px-6 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -327,18 +328,376 @@ const WebsiteSolutions = () => {
             <p className="text-xl text-gray-600">See what we can build for your business</p>
           </div>
           
-          <div className="bg-white rounded-3xl p-12 border-2 border-dashed border-gray-300 text-center">
-            <div className="w-20 h-20 rounded-full bg-[#D4AF37]/20 flex items-center justify-center mx-auto mb-6">
-              <Globe className="w-10 h-10 text-[#D4AF37]" />
+          {/* Demo Type Selector */}
+          <div className="flex justify-center mb-12">
+            <div className="inline-flex bg-gray-100 rounded-full p-1">
+              <button
+                onClick={() => setActiveDemo('educational')}
+                className={`px-6 py-3 rounded-full font-medium transition-all ${
+                  activeDemo === 'educational'
+                    ? 'bg-[#1F4E79] text-white shadow-lg'
+                    : 'text-gray-600 hover:text-[#1F4E79]'
+                }`}
+              >
+                <Globe className="w-4 h-4 inline mr-2" />
+                Educational
+              </button>
+              <button
+                onClick={() => setActiveDemo('ecommerce')}
+                className={`px-6 py-3 rounded-full font-medium transition-all ${
+                  activeDemo === 'ecommerce'
+                    ? 'bg-[#C9A84C] text-white shadow-lg'
+                    : 'text-gray-600 hover:text-[#C9A84C]'
+                }`}
+              >
+                <ShoppingCart className="w-4 h-4 inline mr-2" />
+                E-commerce
+              </button>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Coming Soon</h3>
+          </div>
+          
+          {/* Educational Demo */}
+          {activeDemo === 'educational' && (
+            <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
+              <div className="grid md:grid-cols-2">
+                {/* Website Preview with Screenshots */}
+                <div className="bg-gradient-to-br from-[#1F4E79]/10 to-[#D4AF37]/10 p-6">
+                  <div className="text-center mb-4">
+                    <h3 className="text-xl font-bold text-[#1F4E79] mb-2">Ariya Academy</h3>
+                    <p className="text-sm text-gray-600">Professional School Website</p>
+                  </div>
+                  
+                  {/* Screenshot Gallery */}
+                  <div className="grid grid-cols-2 gap-3 mb-4">
+                    <div className="space-y-3">
+                      <img 
+                        src="/s-home.png" 
+                        alt="Home Page - Professional Hero Section" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://future-steps-demo-pi.vercel.app/", "_blank")}
+                      />
+                      <img 
+                        src="/s-program.png" 
+                        alt="Programs Page - Course Listings" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://future-steps-demo-pi.vercel.app/", "_blank")}
+                      />
+                    </div>
+                    <div className="space-y-3">
+                      <img 
+                        src="/s-feature.png" 
+                        alt="Features Page - Key Highlights" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://future-steps-demo-pi.vercel.app/", "_blank")}
+                      />
+                      <img 
+                        src="/s-register.png" 
+                        alt="Registration Page - Student Enrollment" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://future-steps-demo-pi.vercel.app/", "_blank")}
+                      />
+                    </div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <a 
+                      href="https://future-steps-demo-pi.vercel.app/" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-[#1F4E79] hover:bg-[#1a3d61] text-white px-6 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-xl"
+                    >
+                      <ArrowRight className="w-5 h-5" />
+                      View Live Demo
+                    </a>
+                    <p className="text-xs text-gray-500 mt-1">Click any screenshot to visit</p>
+                  </div>
+                </div>
+                
+                {/* Project Details */}
+                <div className="p-8">
+                  <div className="mb-6">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-[#D4AF37] to-[#D4AF37]/80 text-white font-bold text-sm rounded-full mb-4">
+                      <Star className="w-4 h-4" />
+                      Premium Package - $700 - $1,200
+                    </div>
+                    <h4 className="text-xl font-bold text-gray-900 mb-4">Ariya Academy Website</h4>
+                    <p className="text-gray-600 mb-4 leading-relaxed">
+                      Premium-tier educational website showcasing advanced React development capabilities and modern web standards.
+                    </p>
+                    <div className="bg-gradient-to-r from-[#D4AF37] to-[#D4AF37]/80 text-white p-4 rounded-2xl mb-6 text-center">
+                      <p className="text-sm font-bold mb-2">Premium Educational Websites</p>
+                      <div className="flex items-baseline justify-center gap-2 mb-2">
+                        <p className="text-3xl font-bold">$700</p>
+                        <span className="text-white/80">-</span>
+                        <p className="text-3xl font-bold">$1,200</p>
+                      </div>
+                      <p className="text-sm text-white/90">Same quality as $5,000+ agency websites</p>
+                    </div>
+                  </div>
+                  
+                  {/* Key Features */}
+                  <div className="space-y-4 mb-6">
+                    <h5 className="font-bold text-gray-900 mb-3">Complete Solution (8 Pages):</h5>
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Home (Hero + CTAs)</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">About Us</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Programs</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Admissions</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Academics</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Campus Life</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">News & Events</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Contact</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Business Benefits */}
+                  <div className="border-t pt-4">
+                    <h5 className="font-bold text-gray-900 mb-3">Business Benefits:</h5>
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                          <TrendingUp className="w-4 h-4 text-green-600" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-gray-800">Attract More Students</p>
+                          <p className="text-xs text-gray-600">Professional website builds trust with parents</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                          <Globe className="w-4 h-4 text-blue-600" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-gray-800">24/7 Online Presence</p>
+                          <p className="text-xs text-gray-600">Show your programs anytime, anywhere</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                          <Users className="w-4 h-4 text-purple-600" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-gray-800">Stand Out from Competition</p>
+                          <p className="text-xs text-gray-600">Modern design makes you look established</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Ready to Launch Badge */}
+                    <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-3">
+                      <div className="flex items-center gap-2">
+                        <Zap className="w-4 h-4 text-green-600" />
+                        <span className="text-sm font-semibold text-green-800">Ready to Launch in 2-4 Weeks</span>
+                      </div>
+                      <p className="text-xs text-green-700 mt-1">Complete website with fast delivery and ongoing support</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+          
+          {/* E-commerce Demo */}
+          {activeDemo === 'ecommerce' && (
+            <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
+              <div className="grid md:grid-cols-2">
+                {/* E-commerce Preview with Screenshots */}
+                <div className="bg-gradient-to-br from-[#C9A84C]/10 to-[#0D0D0D]/10 p-6">
+                  <div className="text-center mb-4">
+                    <h3 className="text-xl font-bold text-[#0D0D0D] mb-2">Ariya Fashion</h3>
+                    <p className="text-sm text-gray-600">Luxury E-commerce Platform</p>
+                  </div>
+                  
+                  {/* Fashion Screenshot Gallery */}
+                  <div className="grid grid-cols-2 gap-3 mb-4">
+                    <div className="space-y-3">
+                      <img 
+                        src="/s-home-f.png" 
+                        alt="Fashion Home Page - Luxury Hero" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://ariya-s-luxury-showcase.vercel.app/", "_blank")}
+                      />
+                      <img 
+                        src="/s-shop-f.png" 
+                        alt="Shop Page - Product Catalog" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://ariya-s-luxury-showcase.vercel.app/", "_blank")}
+                      />
+                    </div>
+                    <div className="space-y-3">
+                      <img 
+                        src="/s-pro-de-f.png" 
+                        alt="Product Detail Page - Luxury Item" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://ariya-s-luxury-showcase.vercel.app/", "_blank")}
+                      />
+                      <img 
+                        src="/s-m-menu-f.png" 
+                        alt="Mobile Menu - Responsive Design" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://ariya-s-luxury-showcase.vercel.app/", "_blank")}
+                      />
+                    </div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <a 
+                      href="https://ariya-s-luxury-showcase.vercel.app/" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-[#0D0D0D] hover:bg-[#1a1a1a] text-white px-6 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-xl"
+                    >
+                      <ArrowRight className="w-5 h-5" />
+                      View Luxury Store
+                    </a>
+                    <p className="text-xs text-gray-500 mt-1">Click any screenshot to visit</p>
+                  </div>
+                </div>
+                
+                {/* E-commerce Project Details */}
+                <div className="p-8">
+                  <div className="mb-6">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-[#C9A84C] to-[#C9A84C]/80 text-white font-bold text-sm rounded-full mb-4">
+                      <Star className="w-4 h-4" />
+                      Luxury Package - $1,800 - $2,500
+                    </div>
+                    <h4 className="text-xl font-bold text-gray-900 mb-4">Ariya Fashion E-commerce</h4>
+                    <p className="text-gray-600 mb-4 leading-relaxed">
+                      World-class luxury fashion e-commerce platform with advanced features and Cambodia market specialization.
+                    </p>
+                    <div className="bg-gradient-to-r from-[#C9A84C] to-[#C9A84C]/80 text-white p-4 rounded-2xl mb-6 text-center">
+                      <p className="text-sm font-bold mb-2">Luxury E-commerce Platforms</p>
+                      <div className="flex items-baseline justify-center gap-2 mb-2">
+                        <p className="text-3xl font-bold">$1,800</p>
+                        <span className="text-white/80">-</span>
+                        <p className="text-3xl font-bold">$2,500</p>
+                      </div>
+                      <p className="text-sm text-white/90">Same quality as $5,000+ agency stores</p>
+                    </div>
+                  </div>
+                  
+                  {/* Advanced Features */}
+                  <div className="space-y-4 mb-6">
+                    <h5 className="font-bold text-gray-900 mb-3">Advanced E-commerce Features:</h5>
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">12 Complete Pages</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Telegram Bot Integration</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">4 Bank QR Payments</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Admin Dashboard</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">User Authentication</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Dark Mode Support</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">SEO Optimized</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Blog System</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Business Benefits */}
+                  <div className="border-t pt-4">
+                    <h5 className="font-bold text-gray-900 mb-3">Business Benefits:</h5>
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                          <TrendingUp className="w-4 h-4 text-green-600" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-gray-800">Sell Online 24/7</p>
+                          <p className="text-xs text-gray-600">Complete e-commerce platform for sales</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                          <CreditCard className="w-4 h-4 text-blue-600" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-gray-800">Cambodia Payment Ready</p>
+                          <p className="text-xs text-gray-600">Local payment methods customers trust</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                          <Crown className="w-4 h-4 text-purple-600" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-gray-800">Luxury Brand Image</p>
+                          <p className="text-xs text-gray-600">Premium design that builds trust</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Production Ready Badge */}
+                    <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-3">
+                      <div className="flex items-center gap-2">
+                        <Zap className="w-4 h-4 text-green-600" />
+                        <span className="text-sm font-semibold text-green-800">Production Ready E-commerce</span>
+                      </div>
+                      <p className="text-xs text-green-700 mt-1">Complete online store with admin panel and payment processing</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+          
+          {/* Call to Action */}
+          <div className="text-center mt-12">
             <p className="text-gray-600 mb-6">
-              We're preparing sample websites to show you what's possible with each package.
+              Want a similar website for your school or business?
             </p>
-            <button className="inline-flex items-center gap-2 bg-[#D4AF37] hover:bg-[#c49b28] text-white px-6 py-3 rounded-full font-bold transition-all">
+            <a 
+              href="#contact" 
+              className="inline-flex items-center gap-2 bg-[#D4AF37] hover:bg-[#C49A2F] text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-xl"
+            >
               <MessageCircle className="w-5 h-5" />
-              Request Demo
-            </button>
+              Get Your Custom Quote
+            </a>
           </div>
         </div>
       </section>
