@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Check, Star, Globe, Users, Zap, TrendingUp, MessageCircle, ShoppingCart, CreditCard, Palette, Crown, Phone, Mail, Shield } from 'lucide-react';
+import { ArrowRight, Check, Star, Globe, Users, Zap, TrendingUp, MessageCircle, ShoppingCart, CreditCard, Palette, Crown, Phone, Mail, Shield, Heart } from 'lucide-react';
 import Navigation from './Navigation';
 import Footer from './Footer';
 import ContactForm from './ContactForm';
@@ -335,7 +335,7 @@ const WebsiteSolutions = () => {
                 onClick={() => setActiveDemo('educational')}
                 className={`px-6 py-3 rounded-full font-medium transition-all ${
                   activeDemo === 'educational'
-                    ? 'bg-[#1F4E79] text-white shadow-lg'
+                    ? 'bg-[#C9A84C] text-white shadow-lg'
                     : 'text-gray-600 hover:text-[#1F4E79]'
                 }`}
               >
@@ -352,6 +352,17 @@ const WebsiteSolutions = () => {
               >
                 <ShoppingCart className="w-4 h-4 inline mr-2" />
                 E-commerce
+              </button>
+              <button
+                onClick={() => setActiveDemo('medical')}
+                className={`px-6 py-3 rounded-full font-medium transition-all ${
+                  activeDemo === 'medical'
+                    ? 'bg-[#C9A84C] text-white shadow-lg'
+                    : 'text-gray-600 hover:text-[#C9A84C]'
+                }`}
+              >
+                <Heart className="w-4 h-4 inline mr-2" />
+                Medical
               </button>
             </div>
           </div>
@@ -404,7 +415,7 @@ const WebsiteSolutions = () => {
                       href="https://future-steps-demo-pi.vercel.app/" 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-[#1F4E79] hover:bg-[#1a3d61] text-white px-6 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-xl"
+                      className="inline-flex items-center gap-2 bg-[#0D0D0D] hover:bg-[#1a1a1a] text-white px-6 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-xl"
                     >
                       <ArrowRight className="w-5 h-5" />
                       View Live Demo
@@ -686,10 +697,175 @@ const WebsiteSolutions = () => {
             </div>
           )}
           
+          {/* Medical Demo */}
+          {activeDemo === 'medical' && (
+            <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
+              <div className="grid md:grid-cols-2">
+                {/* Medical Preview with Screenshots */}
+                <div className="bg-gradient-to-br from-[#C9A84C]/10 to-[#0D0D0D]/10 p-6">
+                  <div className="text-center mb-4">
+                    <h3 className="text-xl font-bold text-[#0D0D0D] mb-2">Ariya Medical</h3>
+                    <p className="text-sm text-gray-600">Clinic Management System</p>
+                  </div>
+                  
+                  {/* Medical Screenshot Gallery */}
+                  <div className="grid grid-cols-2 gap-3 mb-4">
+                    <div className="space-y-3">
+                      <img 
+                        src="/s-hero.png" 
+                        alt="Medical Home Page - Professional Hero" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://cliniclink-pro.vercel.app/", "_blank")}
+                      />
+                      <img 
+                        src="/s-dashboard.png" 
+                        alt="Dashboard Page - Patient Portal" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://cliniclink-pro.vercel.app/", "_blank")}
+                      />
+                    </div>
+                    <div className="space-y-3">
+                      <img 
+                        src="/s-d-menu-c.png" 
+                        alt="Desktop Menu - Professional Navigation" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://cliniclink-pro.vercel.app/", "_blank")}
+                      />
+                      <img 
+                        src="/s-m-menu-c.png" 
+                        alt="Mobile Menu - Responsive Medical Design" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://cliniclink-pro.vercel.app/", "_blank")}
+                      />
+                    </div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <a 
+                      href="https://cliniclink-pro.vercel.app/" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-[#0D0D0D] hover:bg-[#1a1a1a] text-white px-6 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-xl"
+                    >
+                      <ArrowRight className="w-5 h-5" />
+                      View Medical System
+                    </a>
+                    <p className="text-xs text-gray-500 mt-1">Click any screenshot to visit</p>
+                  </div>
+                </div>
+                
+                {/* Medical Project Details */}
+                <div className="p-8">
+                  <div className="mb-6">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-[#C9A84C] to-[#C9A84C]/80 text-white font-bold text-sm rounded-full mb-4">
+                      <Star className="w-4 h-4" />
+                      Healthcare Package - $1,800 - $2,500
+                    </div>
+                    <h4 className="text-xl font-bold text-gray-900 mb-4">Ariya Medical Clinic System</h4>
+                    <p className="text-gray-600 mb-4 leading-relaxed">
+                      Comprehensive medical clinic management platform showcasing advanced React development with healthcare industry specialization.
+                    </p>
+                    <div className="bg-gradient-to-r from-[#C9A84C] to-[#C9A84C]/80 text-white p-4 rounded-2xl mb-6 text-center">
+                      <p className="text-sm font-bold mb-2">Healthcare Management Platforms</p>
+                      <div className="flex items-baseline justify-center gap-2 mb-2">
+                        <p className="text-3xl font-bold">$1,800</p>
+                        <span className="text-white/80">-</span>
+                        <p className="text-3xl font-bold">$2,500</p>
+                      </div>
+                      <p className="text-sm text-white/90">Same quality as $5,000+ healthcare systems</p>
+                    </div>
+                  </div>
+                  
+                  {/* Advanced Medical Features */}
+                  <div className="space-y-4 mb-6">
+                    <h5 className="font-bold text-gray-900 mb-3">Comprehensive Medical Features:</h5>
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">18 Complete Pages</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Patient Dashboard</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Doctor Profiles</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Appointment Booking</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Medical Records</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Emergency Contact</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Blog & Resources</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Insurance & Payment</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Healthcare Business Benefits */}
+                  <div className="border-t pt-4">
+                    <h5 className="font-bold text-gray-900 mb-3">Healthcare Business Benefits:</h5>
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                          <TrendingUp className="w-4 h-4 text-green-600" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-gray-800">Streamline Patient Management</p>
+                          <p className="text-xs text-gray-600">Complete digital workflow for clinic operations</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                          <Users className="w-4 h-4 text-blue-600" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-gray-800">Professional Healthcare Image</p>
+                          <p className="text-xs text-gray-600">Modern medical UI builds patient trust</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                          <Heart className="w-4 h-4 text-purple-600" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-gray-800">Complete Patient Journey</p>
+                          <p className="text-xs text-gray-600">From booking to follow-up care</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Production Ready Badge */}
+                    <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-3">
+                      <div className="flex items-center gap-2">
+                        <Zap className="w-4 h-4 text-green-600" />
+                        <span className="text-sm font-semibold text-green-800">Production Ready Healthcare System</span>
+                      </div>
+                      <p className="text-xs text-green-700 mt-1">Complete clinic management with 50+ components and professional medical UI</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+          
           {/* Call to Action */}
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-6">
-              Want a similar website for your school or business?
+              Want a similar website for your school, business, or clinic?
             </p>
             <a 
               href="#contact" 
