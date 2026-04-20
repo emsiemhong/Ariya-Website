@@ -56,13 +56,15 @@ const Navigation = () => {
 
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 group" onClick={close}>
+            {/* Desktop Logo */}
             <img 
-              src="/final-logo-A.png" 
+              src={scrolled ? "/final-logo-A.png" : "/Ariya-logo-white-remove.png"} 
               alt="Ariya Logo" 
               className="hidden lg:block w-35 h-20 rounded-lg flex-shrink-0 object-contain"
             />
+            {/* Mobile Logo */}
             <img 
-              src="/final-logo-screen.png" 
+              src={scrolled ? "/final-logo-screen.png" : "/Ariya-icon-logo-removebg.png"} 
               alt="Ariya Logo" 
               className="lg:hidden w-16 h-20 rounded-lg flex-shrink-0 object-contain"
             />
