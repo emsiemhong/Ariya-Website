@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Check, Star, Globe, Users, Zap, TrendingUp, MessageCircle, ShoppingCart, CreditCard, Palette, Crown, Phone, Mail, Shield, Heart } from 'lucide-react';
+import { ArrowRight, Check, Star, Globe, Users, Zap, TrendingUp, MessageCircle, ShoppingCart, CreditCard, Palette, Crown, Phone, Mail, Shield, Heart, Utensils } from 'lucide-react';
 import Navigation from './Navigation';
 import Footer from './Footer';
 import ContactForm from './ContactForm';
@@ -364,6 +364,17 @@ const WebsiteSolutions = () => {
                 <Heart className="w-4 h-4 inline mr-2" />
                 Medical
               </button>
+              <button
+                onClick={() => setActiveDemo('restaurant')}
+                className={`px-6 py-3 rounded-full font-medium transition-all ${
+                  activeDemo === 'restaurant'
+                    ? 'bg-[#C9A84C] text-white shadow-lg'
+                    : 'text-gray-600 hover:text-[#C9A84C]'
+                }`}
+              >
+                <Utensils className="w-4 h-4 inline mr-2" />
+                Restaurant
+              </button>
             </div>
           </div>
           
@@ -385,13 +396,13 @@ const WebsiteSolutions = () => {
                         src="/s-home.png" 
                         alt="Home Page - Professional Hero Section" 
                         className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
-                        onClick={() => window.open("https://future-steps-demo-pi.vercel.app/", "_blank")}
+                        onClick={() => window.open("https://future-steps-demo-nine.vercel.app/", "_blank")}
                       />
                       <img 
                         src="/s-program.png" 
                         alt="Programs Page - Course Listings" 
                         className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
-                        onClick={() => window.open("https://future-steps-demo-pi.vercel.app/", "_blank")}
+                        onClick={() => window.open("https://future-steps-demo-nine.vercel.app/", "_blank")}
                       />
                     </div>
                     <div className="space-y-3">
@@ -399,20 +410,20 @@ const WebsiteSolutions = () => {
                         src="/s-feature.png" 
                         alt="Features Page - Key Highlights" 
                         className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
-                        onClick={() => window.open("https://future-steps-demo-pi.vercel.app/", "_blank")}
+                        onClick={() => window.open("https://future-steps-demo-nine.vercel.app/", "_blank")}
                       />
                       <img 
                         src="/s-register.png" 
                         alt="Registration Page - Student Enrollment" 
                         className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
-                        onClick={() => window.open("https://future-steps-demo-pi.vercel.app/", "_blank")}
+                        onClick={() => window.open("https://future-steps-demo-nine.vercel.app/", "_blank")}
                       />
                     </div>
                   </div>
                   
                   <div className="text-center">
                     <a 
-                      href="https://future-steps-demo-pi.vercel.app/" 
+                      href="https://future-steps-demo-nine.vercel.app/" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-[#0D0D0D] hover:bg-[#1a1a1a] text-white px-6 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-xl"
@@ -855,6 +866,171 @@ const WebsiteSolutions = () => {
                         <span className="text-sm font-semibold text-green-800">Production Ready Healthcare System</span>
                       </div>
                       <p className="text-xs text-green-700 mt-1">Complete clinic management with 50+ components and professional medical UI</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+          
+          {/* Restaurant Demo */}
+          {activeDemo === 'restaurant' && (
+            <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
+              <div className="grid md:grid-cols-2">
+                {/* Restaurant Preview with Screenshots */}
+                <div className="bg-gradient-to-br from-[#C9A84C]/10 to-[#0D0D0D]/10 p-6">
+                  <div className="text-center mb-4">
+                    <h3 className="text-xl font-bold text-[#0D0D0D] mb-2">Maison Ember Bistro</h3>
+                    <p className="text-sm text-gray-600">Premium Restaurant Website</p>
+                  </div>
+                  
+                  {/* Restaurant Screenshot Gallery */}
+                  <div className="grid grid-cols-2 gap-3 mb-4">
+                    <div className="space-y-3">
+                      <img 
+                        src="/s-r-hero.png" 
+                        alt="Restaurant Home Page - Elegant Hero" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://ember-bistro-demo.vercel.app/", "_blank")}
+                      />
+                      <img 
+                        src="/s-r-about.png" 
+                        alt="About Page - Restaurant Story" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://ember-bistro-demo.vercel.app/", "_blank")}
+                      />
+                    </div>
+                    <div className="space-y-3">
+                      <img 
+                        src="/s-r-digital-menu.png" 
+                        alt="Digital Menu - Interactive Menu System" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://ember-bistro-demo.vercel.app/", "_blank")}
+                      />
+                      <img 
+                        src="/s-r-m-menu.png" 
+                        alt="Mobile Menu - Responsive Restaurant Design" 
+                        className="w-full rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                        onClick={() => window.open("https://ember-bistro-demo.vercel.app/", "_blank")}
+                      />
+                    </div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <a 
+                      href="https://ember-bistro-demo.vercel.app/" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-[#0D0D0D] hover:bg-[#1a1a1a] text-white px-6 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-xl"
+                    >
+                      <ArrowRight className="w-5 h-5" />
+                      View Restaurant Website
+                    </a>
+                    <p className="text-xs text-gray-500 mt-1">Click any screenshot to visit</p>
+                  </div>
+                </div>
+                
+                {/* Restaurant Project Details */}
+                <div className="p-8">
+                  <div className="mb-6">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-[#C9A84C] to-[#C9A84C]/80 text-white font-bold text-sm rounded-full mb-4">
+                      <Star className="w-4 h-4" />
+                      Premium Package - $800 - $1,500
+                    </div>
+                    <h4 className="text-xl font-bold text-gray-900 mb-4">Maison Ember Bistro Website</h4>
+                    <p className="text-gray-600 mb-4 leading-relaxed">
+                      Sophisticated dining establishment website showcasing modern web development capabilities with multilingual digital menu system for client demonstration.
+                    </p>
+                    <div className="bg-gradient-to-r from-[#C9A84C] to-[#C9A84C]/80 text-white p-4 rounded-2xl mb-6 text-center">
+                      <p className="text-sm font-bold mb-2">Premium Restaurant Websites</p>
+                      <div className="flex items-baseline justify-center gap-2 mb-2">
+                        <p className="text-3xl font-bold">$800</p>
+                        <span className="text-white/80">-</span>
+                        <p className="text-3xl font-bold">$1,500</p>
+                      </div>
+                      <p className="text-sm text-white/90">Complete restaurant website with digital menu</p>
+                    </div>
+                  </div>
+                  
+                  {/* Advanced Restaurant Features */}
+                  <div className="space-y-4 mb-6">
+                    <h5 className="font-bold text-gray-900 mb-3">Advanced Restaurant Features:</h5>
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">6 Complete Pages</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Digital Menu System</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Multilingual Support</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">QR Code Integration</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Menu Search & Filters</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Dietary Preferences</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Allergen Information</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">Reservation System</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Restaurant Business Benefits */}
+                  <div className="border-t pt-4">
+                    <h5 className="font-bold text-gray-900 mb-3">Restaurant Business Benefits:</h5>
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                          <TrendingUp className="w-4 h-4 text-green-600" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-gray-800">Enhanced Customer Experience</p>
+                          <p className="text-xs text-gray-600">Digital menu improves dining experience</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                          <Globe className="w-4 h-4 text-blue-600" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-gray-800">Multilingual Accessibility</p>
+                          <p className="text-xs text-gray-600">Serve international customers easily</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                          <Crown className="w-4 h-4 text-purple-600" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-gray-800">Premium Brand Image</p>
+                          <p className="text-xs text-gray-600">Professional design builds trust</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Production Ready Badge */}
+                    <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-3">
+                      <div className="flex items-center gap-2">
+                        <Zap className="w-4 h-4 text-green-600" />
+                        <span className="text-sm font-semibold text-green-800">Production Ready Restaurant Platform</span>
+                      </div>
+                      <p className="text-xs text-green-700 mt-1">Complete restaurant website with 20+ shadcn/ui components and modern tech stack</p>
                     </div>
                   </div>
                 </div>
