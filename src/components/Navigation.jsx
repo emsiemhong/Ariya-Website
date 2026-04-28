@@ -24,14 +24,12 @@ const Navigation = () => {
   const [menuOpen,  setMenuOpen]  = useState(false);
   const [scrolled,  setScrolled]  = useState(false);
 
-  /* ── Scroll listener ─────────────────────────────────────────────── */
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  /* ── Lock body scroll when fullscreen menu open ──────────────────── */
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
@@ -39,7 +37,6 @@ const Navigation = () => {
 
   const close = () => setMenuOpen(false);
 
-  /* ── Derived styles ─────────────────────────────────────────────── */
   const barBg     = scrolled
     ? 'bg-white/70 backdrop-blur-[20px] border-b border-[#D4AF37]/20 shadow-sm'
     : 'bg-transparent';

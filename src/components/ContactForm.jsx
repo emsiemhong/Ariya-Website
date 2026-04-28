@@ -79,7 +79,6 @@ const ContactForm = () => {
   return (
     <div className="max-w-2xl mx-auto">
       <div className="bg-white rounded-3xl p-8 md:p-12 shadow-[0_8px_40px_rgba(31,78,121,0.08)] border border-gray-100">
-        {/* Header */}
         <div className="text-center mb-10">
           <div className="w-16 h-16 rounded-full bg-[#D4AF37]/10 flex items-center justify-center mx-auto mb-6">
             <Mail className="w-8 h-8 text-[#D4AF37]" />
@@ -90,9 +89,7 @@ const ContactForm = () => {
           </p>
         </div>
 
-        {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Name Field */}
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
               Your Name
@@ -112,7 +109,6 @@ const ContactForm = () => {
             </div>
           </div>
 
-          {/* Email Field */}
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
               Email Address
@@ -132,7 +128,6 @@ const ContactForm = () => {
             </div>
           </div>
 
-          {/* Message Field */}
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
               Your Message
@@ -152,7 +147,6 @@ const ContactForm = () => {
             </div>
           </div>
 
-          {/* Submit Button */}
           <button
             type="submit"
             disabled={isSubmitting}
@@ -172,7 +166,6 @@ const ContactForm = () => {
           </button>
         </form>
 
-        {/* Status Messages */}
         {submitStatus === 'success' && (
           <div className="mt-6 p-4 bg-green-50 border border-green-200 rounded-2xl">
             <p className="text-green-800 font-medium text-center">
@@ -189,7 +182,6 @@ const ContactForm = () => {
           </div>
         )}
 
-        {/* Direct Contact Info */}
         <div className="mt-8 pt-8 border-t border-gray-100 text-center">
           <p className="text-gray-600">
             Or reach us directly at{' '}

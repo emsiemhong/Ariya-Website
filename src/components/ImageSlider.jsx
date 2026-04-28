@@ -43,7 +43,6 @@ const ImageSlider = ({ images, autoPlay = true, interval = 5000 }) => {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      {/* Main Image */}
       <div className="relative w-full h-full">
         {images.map((image, index) => (
           <img
@@ -57,7 +56,6 @@ const ImageSlider = ({ images, autoPlay = true, interval = 5000 }) => {
         ))}
       </div>
 
-      {/* Navigation Arrows */}
       <button
         onClick={goToPrevious}
         className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 hover:bg-white text-gray-800 flex items-center justify-center transition-all duration-200 opacity-0 group-hover:opacity-100 shadow-lg"
@@ -74,7 +72,6 @@ const ImageSlider = ({ images, autoPlay = true, interval = 5000 }) => {
         <ChevronRight size={20} />
       </button>
 
-      {/* Slide Indicators */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
         {images.map((_, index) => (
           <button
@@ -90,7 +87,6 @@ const ImageSlider = ({ images, autoPlay = true, interval = 5000 }) => {
         ))}
       </div>
 
-      {/* Image Counter */}
       <div className="absolute top-4 right-4 bg-black/60 text-white px-3 py-1 rounded-full text-sm font-medium">
         {currentIndex + 1} / {images.length}
       </div>

@@ -268,23 +268,18 @@ const ProfessionalTechHub = () => {
       onPointerUp={handlePointerUp}
       onPointerMove={handlePointerMove}
     >
-      {/* Professional lighting setup */}
       <ambientLight intensity={0.6} />
       <directionalLight position={[5, 8, 5]} intensity={1.2} color="#ffffff" />
       <directionalLight position={[-5, -5, -5]} intensity={0.4} color="#1F4E79" />
       <pointLight position={[0, 0, 0]} intensity={1.8} color="#D4AF37" distance={12} />
       <pointLight position={[3, 3, 3]} intensity={0.8} color="#1F4E79" distance={8} />
       
-      {/* Background tech nodes */}
       <TechNodes />
       
-      {/* Data flow lines */}
       <DataFlowLines />
       
-      {/* Professional rings */}
       <TechRings />
       
-      {/* Central professional core */}
       <ProfessionalCore hovered={hovered} />
     </group>
   );

@@ -4,7 +4,6 @@ import { Environment } from '@react-three/drei';
 import { ArrowRight } from 'lucide-react';
 import ProfessionalTechHub from './ProfessionalTechHub';
 
-/* ── Animated gold line that grows in on mount ── */
 const GoldLine = () => {
   const [width, setWidth] = useState(0);
   useEffect(() => {
@@ -17,18 +16,15 @@ const GoldLine = () => {
         className="absolute inset-y-0 left-0 bg-[#D4AF37] transition-all ease-out"
         style={{ width: `${width}%`, transitionDuration: '1.6s' }}
       />
-      {/* ghost track */}
       <div className="absolute inset-0 bg-[#F5F5F5]/10" />
     </div>
   );
 };
 
-/* ── Main Hero ────────────────────────────────────────────────────── */
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
 
-      {/* ── Canvas – right half ──────────────────────────────────────── */}
       <div className="absolute inset-y-0 right-0 w-full lg:w-[55%] z-0">
         <Canvas
           camera={{ position: [0, 0, 6.5], fov: 50 }}
@@ -43,11 +39,9 @@ const Hero = () => {
         </Canvas>
       </div>
 
-      {/* ── Left content ─────────────────────────────────────────────── */}
       <div className="relative z-10 max-w-7xl mx-auto px-8 sm:px-10 lg:px-16 w-full pt-28 pb-16 lg:pt-0 lg:pb-0">
         <div className="w-full lg:w-[50%] xl:w-[46%]">
 
-          {/* Eyebrow */}
           <div className="flex items-center gap-3 mb-8">
             <span className="inline-flex h-[1px] w-10 bg-[#D4AF37]" />
             <span className="text-[#D4AF37] text-xs font-bold tracking-[0.22em] uppercase">
@@ -55,8 +49,7 @@ const Hero = () => {
             </span>
           </div>
 
-          {/* Headline */}
-          <h1
+                    <h1
             className="font-extrabold text-[#F5F5F5] leading-none tracking-tight mb-0"
             style={{
               fontSize: 'clamp(3rem, 6vw, 5rem)',

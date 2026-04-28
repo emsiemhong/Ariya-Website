@@ -38,12 +38,10 @@ const ServicesGrid = () => {
         }}
       />
 
-      {/* ── Ambient Royal Blue glow behind header ─────────────────────── */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-56 rounded-full bg-[#1F4E79]/6 blur-3xl pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* ── Section header ──────────────────────────────────────────── */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="inline-flex items-center gap-2 mb-4">
             <span className="h-[1px] w-8 bg-[#D4AF37]" />
@@ -62,7 +60,6 @@ const ServicesGrid = () => {
           </p>
         </div>
 
-        {/* ── Cards ─────────────────────────────────────────────────────── */}
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, i) => {
             const Icon = service.icon;
@@ -80,11 +77,9 @@ const ServicesGrid = () => {
                   overflow-hidden
                 "
               >
-                {/* Gold border glow on hover */}
                 <div className="absolute inset-0 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                   style={{ boxShadow: 'inset 0 0 0 1px rgba(212,175,55,0.6), 0 0 24px rgba(212,175,55,0.12)' }} />
 
-                {/* Icon Wrapper */}
                 <div
                   className="w-20 h-20 rounded-full flex items-center justify-center mb-8 bg-[#D4AF37]/10 group-hover:bg-[#D4AF37]/20 transition-all duration-300 mx-auto"
                 >
@@ -93,7 +88,6 @@ const ServicesGrid = () => {
                   />
                 </div>
 
-                {/* Title */}
                 <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-[#1F4E79] transition-colors mb-1 text-center">
                   {service.title}
                 </h3>
@@ -105,7 +99,6 @@ const ServicesGrid = () => {
                   {service.description}
                 </p>
 
-                {/* Decorative corner glow */}
                 <div className="absolute -bottom-12 -right-12 w-32 h-32 rounded-full bg-[#D4AF37]/5 blur-2xl group-hover:scale-150 group-hover:bg-[#D4AF37]/10 transition-all duration-500" />
               </div>
             );

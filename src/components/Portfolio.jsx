@@ -37,18 +37,6 @@ const Portfolio = () => {
       ]
     },
     
-    // {
-    //   title: "Property Rental Engine",
-    //   icon: Building2,
-    //   stack: "Built with Next.js & PostgreSQL",
-    //   status: "Coming Soon"
-    // },
-    // {
-    //   title: "E-Learning Framework",
-    //   icon: GraduationCap,
-    //   stack: "Built with Java Spring Boot & Angular",
-    //   status: "Coming Soon"
-    // }
   ];
 
   return (

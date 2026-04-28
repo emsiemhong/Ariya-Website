@@ -11,7 +11,6 @@ const WebsiteSolutions = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <Navigation />
       
-      {/* Section 1: Introduction */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#D4AF37]/10 text-[#D4AF37] font-medium text-sm mb-6">
@@ -48,7 +47,6 @@ const WebsiteSolutions = () => {
         </div>
       </section>
 
-      {/* Section 2: Packages */}
       <section id="packages" className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -58,7 +56,6 @@ const WebsiteSolutions = () => {
           
           <div className="grid md:grid-cols-3 gap-8">
             
-            {/* Basic Package */}
             <div className="bg-white border-2 border-gray-200 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 relative">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Basic Package</h3>
@@ -102,7 +99,6 @@ const WebsiteSolutions = () => {
               </button>
             </div>
 
-            {/* Standard Package (Popular) */}
             <div className="bg-gradient-to-br from-[#1F4E79] to-[#2E5C4C] border-2 border-[#D4AF37] rounded-3xl p-8 text-white relative transform scale-105 shadow-2xl">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#D4AF37] text-white rounded-full font-bold text-sm">
@@ -165,7 +161,6 @@ const WebsiteSolutions = () => {
               </button>
             </div>
 
-            {/* Premium Package */}
             <div className="bg-white border-2 border-gray-200 rounded-3xl p-8 hover:shadow-xl transition-all duration-300">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Premium Package</h3>
@@ -215,7 +210,6 @@ const WebsiteSolutions = () => {
             
           </div>
           
-          {/* Important Note */}
           <div className="mt-12 text-center">
             <p className="text-gray-600 italic">
               "Price may vary depending on requirements"
@@ -224,7 +218,6 @@ const WebsiteSolutions = () => {
         </div>
       </section>
 
-      {/* Section 3: Cambodia Market Section */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -320,7 +313,6 @@ const WebsiteSolutions = () => {
         </div>
       </section>
 
-      {/* Section 5: Sample Websites */}
       <section className="py-20 px-6 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -328,7 +320,6 @@ const WebsiteSolutions = () => {
             <p className="text-xl text-gray-600">See what we can build for your business</p>
           </div>
           
-          {/* Demo Type Selector */}
           <div className="flex justify-center mb-12">
             <div className="inline-flex bg-gray-100 rounded-full p-1">
               <button
@@ -378,18 +369,15 @@ const WebsiteSolutions = () => {
             </div>
           </div>
           
-          {/* Educational Demo */}
           {activeDemo === 'educational' && (
             <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
               <div className="grid md:grid-cols-2">
-                {/* Website Preview with Screenshots */}
                 <div className="bg-gradient-to-br from-[#1F4E79]/10 to-[#D4AF37]/10 p-6">
                   <div className="text-center mb-4">
                     <h3 className="text-xl font-bold text-[#1F4E79] mb-2">Ariya Academy</h3>
                     <p className="text-sm text-gray-600">Professional School Website</p>
                   </div>
                   
-                  {/* Screenshot Gallery */}
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div className="space-y-3">
                       <img 
@@ -435,7 +423,6 @@ const WebsiteSolutions = () => {
                   </div>
                 </div>
                 
-                {/* Project Details */}
                 <div className="p-8">
                   <div className="mb-6">
                     <div className="inline-flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-[#D4AF37] to-[#D4AF37]/80 text-white font-bold text-sm rounded-full mb-4">
@@ -457,7 +444,6 @@ const WebsiteSolutions = () => {
                     </div>
                   </div>
                   
-                  {/* Key Features */}
                   <div className="space-y-4 mb-6">
                     <h5 className="font-bold text-gray-900 mb-3">Complete Solution (8 Pages):</h5>
                     <div className="grid grid-cols-2 gap-2">
@@ -529,7 +515,6 @@ const WebsiteSolutions = () => {
                       </div>
                     </div>
                     
-                    {/* Ready to Launch Badge */}
                     <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-3">
                       <div className="flex items-center gap-2">
                         <Zap className="w-4 h-4 text-green-600" />
@@ -543,18 +528,15 @@ const WebsiteSolutions = () => {
             </div>
           )}
           
-          {/* E-commerce Demo */}
           {activeDemo === 'ecommerce' && (
             <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
               <div className="grid md:grid-cols-2">
-                {/* E-commerce Preview with Screenshots */}
                 <div className="bg-gradient-to-br from-[#C9A84C]/10 to-[#0D0D0D]/10 p-6">
                   <div className="text-center mb-4">
                     <h3 className="text-xl font-bold text-[#0D0D0D] mb-2">Ariya Fashion</h3>
                     <p className="text-sm text-gray-600">Luxury E-commerce Platform</p>
                   </div>
                   
-                  {/* Fashion Screenshot Gallery */}
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div className="space-y-3">
                       <img 
@@ -600,7 +582,6 @@ const WebsiteSolutions = () => {
                   </div>
                 </div>
                 
-                {/* E-commerce Project Details */}
                 <div className="p-8">
                   <div className="mb-6">
                     <div className="inline-flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-[#C9A84C] to-[#C9A84C]/80 text-white font-bold text-sm rounded-full mb-4">
@@ -622,7 +603,6 @@ const WebsiteSolutions = () => {
                     </div>
                   </div>
                   
-                  {/* Advanced Features */}
                   <div className="space-y-4 mb-6">
                     <h5 className="font-bold text-gray-900 mb-3">Advanced E-commerce Features:</h5>
                     <div className="grid grid-cols-2 gap-2">
@@ -708,18 +688,15 @@ const WebsiteSolutions = () => {
             </div>
           )}
           
-          {/* Medical Demo */}
           {activeDemo === 'medical' && (
             <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
               <div className="grid md:grid-cols-2">
-                {/* Medical Preview with Screenshots */}
                 <div className="bg-gradient-to-br from-[#C9A84C]/10 to-[#0D0D0D]/10 p-6">
                   <div className="text-center mb-4">
                     <h3 className="text-xl font-bold text-[#0D0D0D] mb-2">Ariya Medical</h3>
                     <p className="text-sm text-gray-600">Clinic Management System</p>
                   </div>
                   
-                  {/* Medical Screenshot Gallery */}
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div className="space-y-3">
                       <img 
@@ -765,7 +742,6 @@ const WebsiteSolutions = () => {
                   </div>
                 </div>
                 
-                {/* Medical Project Details */}
                 <div className="p-8">
                   <div className="mb-6">
                     <div className="inline-flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-[#C9A84C] to-[#C9A84C]/80 text-white font-bold text-sm rounded-full mb-4">
@@ -787,7 +763,6 @@ const WebsiteSolutions = () => {
                     </div>
                   </div>
                   
-                  {/* Advanced Medical Features */}
                   <div className="space-y-4 mb-6">
                     <h5 className="font-bold text-gray-900 mb-3">Comprehensive Medical Features:</h5>
                     <div className="grid grid-cols-2 gap-2">
@@ -826,7 +801,6 @@ const WebsiteSolutions = () => {
                     </div>
                   </div>
                   
-                  {/* Healthcare Business Benefits */}
                   <div className="border-t pt-4">
                     <h5 className="font-bold text-gray-900 mb-3">Healthcare Business Benefits:</h5>
                     <div className="space-y-3">
@@ -873,18 +847,15 @@ const WebsiteSolutions = () => {
             </div>
           )}
           
-          {/* Restaurant Demo */}
           {activeDemo === 'restaurant' && (
             <div className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
               <div className="grid md:grid-cols-2">
-                {/* Restaurant Preview with Screenshots */}
                 <div className="bg-gradient-to-br from-[#C9A84C]/10 to-[#0D0D0D]/10 p-6">
                   <div className="text-center mb-4">
                     <h3 className="text-xl font-bold text-[#0D0D0D] mb-2">Maison Ember Bistro</h3>
                     <p className="text-sm text-gray-600">Premium Restaurant Website</p>
                   </div>
                   
-                  {/* Restaurant Screenshot Gallery */}
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     <div className="space-y-3">
                       <img 
@@ -930,7 +901,6 @@ const WebsiteSolutions = () => {
                   </div>
                 </div>
                 
-                {/* Restaurant Project Details */}
                 <div className="p-8">
                   <div className="mb-6">
                     <div className="inline-flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-[#C9A84C] to-[#C9A84C]/80 text-white font-bold text-sm rounded-full mb-4">
@@ -952,7 +922,6 @@ const WebsiteSolutions = () => {
                     </div>
                   </div>
                   
-                  {/* Advanced Restaurant Features */}
                   <div className="space-y-4 mb-6">
                     <h5 className="font-bold text-gray-900 mb-3">Advanced Restaurant Features:</h5>
                     <div className="grid grid-cols-2 gap-2">
@@ -991,7 +960,6 @@ const WebsiteSolutions = () => {
                     </div>
                   </div>
                   
-                  {/* Restaurant Business Benefits */}
                   <div className="border-t pt-4">
                     <h5 className="font-bold text-gray-900 mb-3">Restaurant Business Benefits:</h5>
                     <div className="space-y-3">
@@ -1038,7 +1006,6 @@ const WebsiteSolutions = () => {
             </div>
           )}
           
-          {/* Call to Action */}
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-6">
               Want a similar website for your school, business, or clinic?
@@ -1054,7 +1021,6 @@ const WebsiteSolutions = () => {
         </div>
       </section>
 
-      {/* Professional Contact Form Section */}
       <section id="contact" className="py-20 px-6 bg-gradient-to-br from-[#1F4E79]/10 to-[#D4AF37]/10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -1075,7 +1041,6 @@ const WebsiteSolutions = () => {
           
           <ContactForm />
           
-          {/* Additional Contact Channels */}
           <div className="text-center mt-8">
             <p className="text-gray-600 mb-4">Or reach us directly:</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
