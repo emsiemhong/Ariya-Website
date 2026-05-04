@@ -5,7 +5,7 @@ import ImageSlider from './ImageSlider';
 const Portfolio = () => {
   const templates = [
     {
-      title: "Ariya Mart Management System (SaaS POS)",
+      title: "Ariyak Mart Management System (SaaS POS)",
       icon: LayoutDashboard,
       stack: "Angular, TypeScript, Java (Spring Boot), PostgreSQL",
       status: "In Development",
@@ -182,10 +182,10 @@ const Portfolio = () => {
           </div>
         </div> */}
 
-        {/* Section B: Ariya Labs (The Templates) */}
+        {/* Section B: Ariyak Labs (The Templates) */}
         <div>
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">Ariya Labs: Standardized Solutions</h3>
+            <h4 className="font-bold text-gray-900 mb-3">Ariyak Labs: Standardized Solutions</h4>
             <p className="text-gray-600 max-w-2xl mx-auto">Foundational engines built with enterprise architecture, ready to be customized for your specific business needs.</p>
           </div>
           

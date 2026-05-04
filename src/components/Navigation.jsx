@@ -55,14 +55,14 @@ const Navigation = () => {
           <a href="/" className="flex items-center gap-3 group" onClick={close}>
             {/* Desktop Logo */}
             <img 
-              src={scrolled ? "/final-logo-A.png" : "/Ariya-logo-white-remove.png"} 
-              alt="Ariya Logo" 
+              src={scrolled ? "/ariya_blue_color_logo.png" : "/ariyak_white_color_logo.png"} 
+              alt="Ariyak Logo" 
               className="hidden lg:block w-35 h-20 rounded-lg flex-shrink-0 object-contain"
             />
             {/* Mobile Logo */}
             <img 
               src={scrolled ? "/final-logo-screen.png" : "/Ariya-icon-logo-removebg.png"} 
-              alt="Ariya Logo" 
+              alt="Ariyak Logo" 
               className="lg:hidden w-16 h-20 rounded-lg flex-shrink-0 object-contain"
             />
           </a>
@@ -135,6 +135,7 @@ const Navigation = () => {
                 transitionDelay: `${i * 70}ms`,
               }}
             >
+              <span className="font-bold tracking-tight">Ariyak</span>
               <span className="text-4xl md:text-5xl font-extrabold text-[#F5F5F5] tracking-widest group-hover:text-[#D4AF37] transition-colors uppercase">
                 {l.en}
               </span>
@@ -148,7 +149,7 @@ const Navigation = () => {
 
         <div className="w-12 h-[2px] bg-[#D4AF37] mt-12 rounded-full" />
         <p className="mt-8 text-[#F5F5F5]/25 text-[11px] tracking-widest uppercase">
-          Ariya Software Solutions · Phnom Penh
+          Ariyak Software Solutions · Phnom Penh
         </p>
       </div>
     </>

@@ -272,13 +272,13 @@ const WebsiteSolutions = () => {
               
               <div className="bg-[#1F4E79] text-white p-6 rounded-2xl">
                 <p className="text-lg font-medium">
-                  "Ariya helps you build a professional website to attract more customers and improve your brand."
+                  "Ariyak helps you build a professional website to attract more customers and improve your brand."
                 </p>
               </div>
             </div>
             
             <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 border border-gray-200">
-              <h3 className="text-2xl font-bold text-[#1F4E79] mb-6">Why Choose Ariya?</h3>
+              <h3 className="text-2xl font-bold text-[#1F4E79] mb-6">Why Choose Ariyak?</h3>
               
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
